@@ -1,0 +1,38 @@
+<br>
+
+<h1>{{ titulo }}</h1>
+<hr>
+
+
+<div class="row animated fadeIn fast" *ngIf="peliculas">
+
+    <div class="col-sm-6">
+
+        <div class="row">
+            <div class="col-md-12 div-pic-1" [routerLink]="['/pelicula', peliculas[0].id, 'home']" [ngStyle]="{'background-image': 'url ( '+ ( peliculas[0] | peliculaImagen ) +' )' }">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm6 div-pic-2" [ngStyle]="{'background-image': 'url(https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjhw_vPp6bjAhUFSa0KHXr7BAAQjRx6BAgBEAU&url=https%3A%2F%2Fwww.ngenespanol.com%2Fel-espacio%2Fimagen-muestra-colores-ocultos-luna%2F&psig=AOvVaw1-bQ3-lOZYPqhFgf2RIoU5&ust=1562709213959090)'}">
+            </div>
+            <div class="col-sm6 div-pic-2" [ngStyle]="{'background-image': 'url(https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjhw_vPp6bjAhUFSa0KHXr7BAAQjRx6BAgBEAU&url=https%3A%2F%2Fwww.ngenespanol.com%2Fel-espacio%2Fimagen-muestra-colores-ocultos-luna%2F&psig=AOvVaw1-bQ3-lOZYPqhFgf2RIoU5&ust=1562709213959090)'}">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-sm-6">
+        <div class="row">
+            <div class="col-sm6 div-pic-2" [ngStyle]="{'background-image': 'url(https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjhw_vPp6bjAhUFSa0KHXr7BAAQjRx6BAgBEAU&url=https%3A%2F%2Fwww.ngenespanol.com%2Fel-espacio%2Fimagen-muestra-colores-ocultos-luna%2F&psig=AOvVaw1-bQ3-lOZYPqhFgf2RIoU5&ust=1562709213959090)'}">
+            </div>
+            <div class="col-sm6 div-pic-2" [ngStyle]="{'background-image': 'url(https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjhw_vPp6bjAhUFSa0KHXr7BAAQjRx6BAgBEAU&url=https%3A%2F%2Fwww.ngenespanol.com%2Fel-espacio%2Fimagen-muestra-colores-ocultos-luna%2F&psig=AOvVaw1-bQ3-lOZYPqhFgf2RIoU5&ust=1562709213959090)'}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 div-pic-1" [ngStyle]="{'background-image': 'url(https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjhw_vPp6bjAhUFSa0KHXr7BAAQjRx6BAgBEAU&url=https%3A%2F%2Fwww.ngenespanol.com%2Fel-espacio%2Fimagen-muestra-colores-ocultos-luna%2F&psig=AOvVaw1-bQ3-lOZYPqhFgf2RIoU5&ust=1562709213959090)'}">
+            </div>
+        </div>
+    </div>
+
+</div>

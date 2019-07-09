@@ -9,6 +9,8 @@ import { PeliculasService } from './services/peliculas.service';
 })
 export class AppComponent {
   constructor(public _ps:PeliculasService ) {
+
+    
     this._ps.getPopulares()
             .subscribe(data => console.log(data))
 
