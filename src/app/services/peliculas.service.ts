@@ -20,8 +20,8 @@ export class PeliculasService {
     let hasta = new Date();
     hasta.setDate( hasta.getDate() + 7);
 
-    let desdeStr = `${desde.getFullYear()}-${ desde.getMonth()}-${desde.getDay()}`
-    let hastaStr = `${hasta.getFullYear()}-${ hasta.getMonth()}-${hasta.getDay()}`
+    let desdeStr = `${desde.getFullYear()}-${ desde.getMonth()}-${desde.getDate()}`
+    let hastaStr = `${hasta.getFullYear()}-${ hasta.getMonth()}-${hasta.getDate()}`
   
     let url = `${ this.urlMoviedb } /discover/movie?primary_release_date.gte=${ desdeStr }&primary_release_date.lte=${ hastaStr }&api_key=${ this.apikey }&language=es&callback=JSONP_CALLBACK`;
 
